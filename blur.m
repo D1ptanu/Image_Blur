@@ -11,8 +11,8 @@ for aa= 1:a
         out(aa,bb)= avg; 
     end
 end
-imshow(out)
-imwrite(out,'blur.png');
+imshow(out)                          % Displays the output in a MATLAB window 
+imwrite(out,'blur.png');             % Exports the new image in the pwd as a .png file
         
 function indices= subarray(x,y,w,a,b)  %returns the indices of the submatrix
 xl= x-w;
